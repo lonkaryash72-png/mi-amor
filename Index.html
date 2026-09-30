@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff6fae">
+<title>MI AMOR ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<audio id="music" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" aria-label="Play music">♫ <span>Music</span></button>
+
+<main>
+  <section class="screen active" id="home">
+    <div class="glass hero">
+      <div class="tiny">A little surprise for you ✨</div>
+      <div class="big-heart">♡</div>
+      <h1>FOR <span>DIVYA</span></h1>
+      <p>I made this little corner of the internet just for you.</p>
+      <button class="primary" onclick="go('birthday')">Open your surprise →</button>
+      <p class="hint">Best viewed with headphones 🎧</p>
+    </div>
+  </section>
+
+  <section class="screen" id="birthday">
+    <div class="glass">
+      <div class="tiny">Today is about you 🎂</div>
+      <h2>Happy Birthday,<br><span>Divya ❤️</span></h2>
+      <p class="lead">If I ever gotta go somewhere i would definitely carry them as an resources😅</p>
+      <button class="primary" onclick="go('memories')">go ahead</button>
+    </div>
+  </section>
+
+  <section class="screen" id="memories">
+    <div class="glass wide">
+      <div class="tiny"></div>
+      <h2>HAPPIEST BIRTHDAY LOML🌙</h2>
+      <div class="gallery">
+        <figure><img src="photo1.jpg" alt="Memory 1"><figcaption>WILL YOU</figcaption></figure>
+        <figure><img src="photo2.jpg" alt="Memory 2"><figcaption>BE MY ️</figcaption></figure>
+<figure><img src="photo3.jpg" alt="Memory 3"><figcaption>GIRL</figcaption></figure>
+        <figure><img src="photo4.jpg" alt="Memory 4"><figcaption>FOREVER?🥹</figcaption></figure>
+      </div>
+      <button class="primary" onclick="go('things')">There's more →</button>
+    </div>
+  </section>
+
+  <section class="screen" id="things">
+    <div class="glass wide">
+      <div class="tiny">Things I don't always say</div>
+      <h2>Why you're special ❤️</h2>
+      <div class="cards">
+        <div class="card"><b>01</b><p>you loved me over my flaws without any judgement.👀</p></div>
+        <div class="card"><b>02</b><p>you kept choosing me even when i was about to give up❤</p></div>
+        <div class="card"><b>03</b><p>Even when I don't have the perfect words, please know that you matter to me deeply.</p></div>
+        <div class="card"><b>04</b><p>I'm grateful for every laugh, every conversation and every memory we've made.</p></div>
+      </div>
+      <button class="primary" onclick="go('openwhen')">Open the little notes 💌</button>
+    </div>
+  </section>
+
+  <section class="screen" id="openwhen">
+    <div class="glass wide">
+      <div class="tiny">Pick one</div>
+      <h2>Open When… 💌</h2>
+      <div class="notes">
+        <button onclick="note('miss')">You miss me 🫂</button>
+        <button onclick="note('sad')">You're having a bad day 🌧️</button>
+        <button onclick="note('angry')">You're angry with me 🙈</button>
+        <button onclick="note('reassure')">You need reassurance ❤️</button>
+      </div>
+      <div class="note-box" id="noteBox">Choose a note above.</div>
+<button class="primary" onclick="go('birthdayMessage')">
+  Read my birthday message 💌
+</button>
+    </div>
+  </section>
+
+<section class="screen" id="final">
+    <div class="glass">
+      <div class="tiny">And finally…</div>
+      <div class="big-heart pulse">♥</div>
+      <h2>Happy Birthday,<br><span>YOU'RE MY GOODLUCK CHARM.</span></h2>
+      <p class="lead">I don't know exactly what every tomorrow will look like, but I know I'm genuinely grateful that you are part of my life today. Thank you for being you. I hope this year brings you reasons to smile, dreams to chase and moments you'll remember for a long time.</p>
+      <p class="signature">— yash❤</p>
+      <button class="primary" onclick="celebrate()">Make a little birthday magic ✨</button>
+      <button class="back" onclick="go('home')">Replay from the beginning</button>
+    </div>
+  </section>
+
+<section class="screen" id="birthdayMessage">
+  <div class="glass">
+    <div class="tiny">A message from my heart 💌</div>
+    
+    <h2>Happy Birthday,<br>
+      <span>Mi Amor ❤️</span>
+    </h2>
+    
+    <p class="lead">
+      I don't know if words will ever be enough to explain what you mean to me.
+      But if there's one thing I want you to know today, it's this —
+      <strong>I'm genuinely grateful that you're a part of my life.</strong>
+      <br><br>
+      
+      We've had beautiful moments, silly moments, difficult moments…
+      but somehow, every memory with you became special. 🫶🏻
+      <br><br>
+      
+      I hope this year brings you everything your heart wishes for —
+      happiness, peace, success and a thousand reasons to smile.
+      <br><br>
+      
+      And selfishly… I hope I get to be there for many of those smiles. ❤️
+      <br><br>
+      
+      Happy Birthday, Divya. 🎂
+      <br>
+      <strong>Mi amor, always. ❤️</strong>
+    </p>
+<button class="primary" onclick="go('final')"> one last thing 💌
+</button>
+  
+  </div>
+</section>
+<main>
+
+<script src="script.js"></script>
+</body>
+</html>
